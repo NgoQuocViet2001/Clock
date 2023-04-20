@@ -1,0 +1,224 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 10px solid #3d3d3d;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
+}
+
+.number {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3d3d3d;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number.number1 {
+    top: 22px;
+    margin-left: 90px;
+}
+
+.number.number2 {
+    top: 52px;
+    margin-left: 140px;
+}
+
+.number.number3 {
+    top: 89px;
+    right: 5px;
+}
+
+.number.number4 {
+    bottom: 45px;
+    margin-left: 140px;
+}
+
+.number.number5 {
+    bottom: 20px;
+    margin-left: 80px;
+}
+
+.number.number6 {
+    bottom: 5px;
+    left: 85px;
+}
+
+.number.number7 {
+    bottom: 20px;
+    margin-right: 75px;
+}
+
+.number.number8 {
+    bottom: 47px;
+    margin-right: 131px;
+}
+
+.number.number9 {
+    top: 88px;
+    left: 5px;
+}
+
+.number.number10 {
+    top: 53px;
+    margin-right: 137px;
+}
+
+.number.number11 {
+    top: 22px;
+    margin-right: 90px;
+}
+
+.number.number12 {
+    top: 5px;
+    left: 85px;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    background: #3d3d3d;
+    transform-origin: 50% 100%;
+    transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+    width: 6px;
+    height: 45px;
+    margin-left: -3px;
+    border-radius: 3px 3px 0 0;
+    transform: rotate(30deg);
+    margin-bottom: 36px;
+}
+
+.minute-hand {
+    width: 4px;
+    height: 60px;
+    margin-left: -2px;
+    border-radius: 3px 3px 0 0;
+    transform: rotate(20deg);
+    margin-bottom: 50px;
+}
+
+.second-hand {
+    width: 2px;
+    height: 70px;
+    margin-left: -1px;
+    border-radius: 3px 3px 0 0;
+    transform: rotate(10deg);
+    margin-bottom: 62px;
+}
+
+.number.number3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #3d3d3d;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number.number6 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #3d3d3d;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number.number9 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #3d3d3d;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number.number12 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #3d3d3d;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .clock {
+        width: 150px;
+        height: 150px;
+        border-width: 7px;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .number {
+        font-size: 14px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .number.number3,
+    .number.number6,
+    .number.number9,
+    .number.number12 {
+        font-size: 18px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .hour-hand {
+        width: 4px;
+        height: 30px;
+        margin-left: -2px;
+        border-radius: 2px 2px 0 0;
+        transform: rotate(30deg);
+    }
+
+    .minute-hand {
+        width: 3px;
+        height: 50px;
+        margin-left: -1.5px;
+        border-radius: 2px 2px 0 0;
+        transform: rotate(20deg);
+    }
+
+    .second-hand {
+        width: 2px;
+        height: 60px;
+        margin-left: -1px;
+        border-radius: 2px 2px 0 0;
+        transform: rotate(10deg);
+    }
+}
